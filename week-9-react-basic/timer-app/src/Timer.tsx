@@ -6,6 +6,7 @@ function Timer() {
 
 	const min = Math.floor(totalSeconds / 60);
 	const sec = totalSeconds % 60;
+  
 
 	useEffect(() => {
 		if (!isRunning) return;
