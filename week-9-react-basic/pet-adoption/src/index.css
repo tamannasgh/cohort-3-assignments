@@ -3,4 +3,6 @@
 @theme{
   --color-primary: oklch(0.473 0.137 46.201);
   --color-glass: oklch(1 0 0 / 50%);
+  --color-primary-black: oklch(27.9% 0.077 45.635);
+  --color-primary-dark: oklch(41.4% 0.112 45.904);
 }
