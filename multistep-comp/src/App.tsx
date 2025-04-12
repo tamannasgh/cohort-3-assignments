@@ -6,11 +6,13 @@ import Three from "./components/Three"
 function App() {
 
   return (
-    <MultiStep>
-      <One />
-      <Two />
-      <Three />
-    </MultiStep>
+    <div className="flex justify-center items-center h-screen bg-gray-100">
+      <MultiStep>
+        <One />
+        <Two />
+        <Three />
+      </MultiStep>
+    </div>
   )
 }
 
