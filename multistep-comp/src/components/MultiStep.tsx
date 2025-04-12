@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ProgressBar from "./ProgressBar";
 
 type MultiStepProps = {
 	children: React.ReactNode[];
@@ -10,9 +11,12 @@ function MultiStep({ children, onComplete }: MultiStepProps) {
 	const totalsteps = children.length;
 	return (
 		<div className="border rounded-lg p-10 w-full max-w-xl m-auto bg-white shadow-lg flex flex-col gap-10">
-			<h1 className="self-end">
+      <div className="flex justify-between items-center gap-3">
+        <ProgressBar totalSteps={totalsteps} currentStep={step} progressColor="#9810fa"/>
+        <h1 className="self-end">
 				{step + 1}/{totalsteps}
-			</h1>
+			</h1></div>
+			
 			{children[step]}
 			<div className="flex justify-between items-center">
 				<button
