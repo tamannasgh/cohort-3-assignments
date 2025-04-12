@@ -7,6 +7,11 @@ function App() {
 
   return (
     <div className="flex justify-center items-center h-screen bg-gray-100">
+      {/* <MultiStep onComplete={() => alert("Yo Completed!")}>
+        <One />
+        <Two />
+        <Three />
+      </MultiStep> */}
       <MultiStep>
         <One />
         <Two />
